@@ -13,8 +13,8 @@ public interface FireAlarmServerInterface extends Remote{
      * add sensor
      * get sensor reading by sensorId
      * */
-    public void addFloor(String floorName);
-    public void addRoom(int roomNumber, int floorId);
-    public void addSensor(int roomId, Sensor sensor) throws RemoteException;
+    public void addFloor(String floorName) throws RemoteException;
+    public void addRoom(int roomNumber, int floorId) throws RemoteException;
+    public void addSensor(Sensor sensor) throws RemoteException;
 
 }
